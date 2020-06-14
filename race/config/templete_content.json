@@ -1,0 +1,12 @@
+{
+	"environment":"game",
+	"course":"",
+	"module":"",
+	"list_slide":[
+		{
+			"slide":0,
+			"file":"html/race.html",
+			"class":"Race"
+		}
+	]
+}

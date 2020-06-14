@@ -1,0 +1,558 @@
+<style type="text/css">
+    #popupItem .tutorial {
+        background: url(assets/image/spinner/sinar.png);
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        display: table;
+        background-repeat: no-repeat;
+    }
+    #content .slider-content>div>div{
+        position: relative;
+        height: auto !important;
+        text-align: center;
+    }
+    .timer{
+        display: inline-block;
+        position: relative;
+        /*width: 136px;*/
+        height: 38px;
+    }
+    .timer img{
+        height: 100%;
+    }
+    .timer .txt_timer{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: table;
+        width: 58%;
+        height: 100%;
+    }
+    .timer .txt_timer .text_time{
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #fff;
+        padding-right: 15px;
+        padding-left: 10px;
+    }
+    .spin_wrapper{
+        overflow: hidden;
+        margin: 0 auto;
+        background: url(assets/image/spinner/bg-wheel-38.png) no-repeat center / cover;
+    }
+    
+    .spin_wrapper .roda{
+        width: 39.787798408488065vh;
+        height: 39.787798408488065vh;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        margin: 8.488063660477454vh auto;
+    }
+    .spin_wrapper .roda .btn-spin{
+        position: absolute;
+        z-index: 20;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
+    }
+    .spin_wrapper .roda .btn-spin img{
+        width: 100%;
+    }
+    .pilihan_spin{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+    }
+    /*.pilihan img{
+        max-width: 41px;
+        max-height: 67px;
+        margin-top: -3px;
+    }*/
+    .pilihan_spin.pilih-1{
+        left: 0;
+        top: 0;
+        /*background: #f7931e;*/
+    }
+    .pilihan_spin.pilih-2{
+        right: 0;
+        top: 0;
+        /*background: #fff;*/
+    }
+    .pilihan_spin.pilih-3{
+        bottom: 0;
+        right: 0;
+        /*background: #fff;*/
+    }
+    .pilihan_spin.pilih-4{
+        bottom: 0;
+        left: 0;
+        /*background: #f7931e;*/
+    }
+    .pilihan_spin.pilih-5 {
+        bottom: 0;
+        left: 0;
+    }
+    .pilihan_spin .point{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .pilihan_spin.pilih-1 .point{
+        background: #fff;
+        top: 41%;
+        left: 54%;
+        margin-left: -15px;
+    }
+    .pilihan_spin.pilih-1 .text_item{
+        transform: rotate(-45deg);
+        top: 33%;
+        position: absolute;
+        left: 5%;
+        width: 100%;
+    }
+    .pilihan_spin.pilih-1 .text_item img{
+
+    }
+    .pilihan_spin.pilih-2 .point{
+        background: #f7931e;
+        top: 41%;
+        right: 53%;
+        margin-right: -15px;
+    }
+    .pilihan_spin.pilih-2 .text_item{
+        width: 100%;
+        transform: rotate(45deg);
+        top: 33%;
+        position: absolute;
+        right: 5%;
+    }
+    .pilihan_spin.pilih-2 .text_item img{
+
+    }
+    .pilihan_spin.pilih-3 .point{
+        background: #f7931e;
+        top: 23%;
+        left: 50%;
+        margin-left: -15px;
+    }
+    .pilihan_spin.pilih-3 .text_item{
+        position: absolute;
+        top: 15%;
+        right: 5%;
+    }
+
+    .pilihan_spin .text_item img{
+        width: 50%;
+        margin: auto;
+    }
+    .pilihan_spin.pilih-4 .point{
+        background: #fff;
+        top: 22%;
+        right: 53%;
+        margin-right: -15px;
+    }
+    .pilihan_spin.pilih-4 .text_item{
+        position: absolute;
+        top: 15%;
+        right: 5%;
+    }
+    .pilihan_spin.pilih-4 .text_item img{
+
+    }
+
+    .pilihan_spin.pilih-5 .text_item{
+        position: absolute;
+        width: 100%;
+        transform: rotate(-111deg);
+        top: 0;
+        left: -7%;
+    }
+    .item-complete-wrapper{
+        width: 100%;
+    }
+    .item-complete-wrapper .item-complete{
+        width: 100%;
+        height: 100%;
+    }
+    .item-complete-wrapper .tittle-item{
+        position: relative;
+        margin-top: -20px;
+    }
+    .item-complete-wrapper .list-item{
+        padding: 15px 0;
+        display: inline-block;
+        height: 16vh;
+    }
+    .item-complete .img-item{
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+    .item-complete .img-item.active{
+        opacity: 1;
+    }
+    .item-complete .img-item img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .item-complete .count-item{
+        display: block;
+        color: #123456;
+        font-size: 3.183023872679045vh;
+    }
+    .item-complete .count-item .curr-count{
+        color: #123456;
+        font-size: 3.713527851458886vh;
+    }
+    .wrap{
+        padding: 0;
+    }
+    .wheel-spin{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    #content .slider-content>div{
+        padding: 0px;
+    }
+    .img_anim{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 30;
+        display: table; 
+    }
+    .img_anim.hide{
+        display: none;
+    }
+    .img_anim img{
+        z-index: 50;
+        max-width: 140px;
+        width: 100%;
+
+    }
+    .img_anim_center{
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+     @-webkit-keyframes anim_one {
+      from {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      to {
+        width: 35px;
+        height: 35px;
+        top: 439px;
+        left: 54px;
+      }
+    }
+    @keyframes anim_one {
+      from {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      to {
+        width: 35px;
+        height: 35px;
+        top: 439px;
+        left: 54px;
+      }
+    }
+    .img_anim.anim0 {
+        width: 35px;
+        height: 35px;
+        top: 439px;
+        left: 54px;
+        -webkit-animation: anim_one .1s linear;
+        -moz-animation: anim_one .1s linear;
+        -ms-animation: anim_one .1s linear;
+        -o-animation: anim_one .1s linear;
+        animation: anim_one .1s linear;
+    }
+
+    @-webkit-keyframes anim_two {
+      from {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      to {
+        width: 35px;
+        height: 35px;
+        top: 439px;
+        left: 113px;
+      }
+    }
+    @keyframes anim_two {
+      from {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      to {
+        width: 35px;
+        height: 35px;
+        top: 439px;
+        left: 113px;
+      }
+    }
+    .img_anim.anim1 {
+        width: 35px;
+        height: 35px;
+        top: 439px;
+        left: 113px;
+        -webkit-animation: anim_one .2s linear;
+        -moz-animation: anim_one .2s linear;
+        -ms-animation: anim_one .2s linear;
+        -o-animation: anim_one .2s linear;
+        animation: anim_one .2s linear;
+    }
+
+    @-webkit-keyframes anim_three {
+      from {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      to {
+        width: 21px;
+        height: 35px;
+        top: 436px;
+        left: 180px;
+      }
+    }
+    @keyframes anim_three {
+      from {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      to {
+        width: 21px;
+        height: 35px;
+        top: 436px;
+        left: 180px;
+      }
+    }
+    .img_anim.anim2 {
+        width: 21px;
+        height: 35px;
+        top: 436px;
+        left: 180px;
+        -webkit-animation: anim_three .2s linear;
+        -moz-animation: anim_three .2s linear;
+        -ms-animation: anim_three .2s linear;
+        -o-animation: anim_three .2s linear;
+        animation: anim_three .2s linear;
+    }
+
+    @-webkit-keyframes anim_four {
+      from {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      to {
+        width: 21px;
+        height: 35px;
+        top: 439px;
+        left: 238px;
+      }
+    }
+    @keyframes anim_four {
+      from {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      to {
+        width: 21px;
+        height: 35px;
+        top: 439px;
+        left: 238px;
+      }
+    }
+    .img_anim.anim3 {
+        width: 21px;
+        height: 35px;
+        top: 439px;
+        left: 238px;
+        -webkit-animation: anim_four .2s linear;
+        -moz-animation: anim_four .2s linear;
+        -ms-animation: anim_four .2s linear;
+        -o-animation: anim_four .2s linear;
+        animation: anim_four .2s linear;
+    }
+    .img_anim.anim2 img{
+        max-width: 70px;
+    }
+
+    .txt_tittle_item{
+        position: relative;
+        width: 100%;
+        color: white;
+        font-size: 3.713527851458886vh;
+        font-weight: 700;
+        background: #1D8BEC;
+        padding: 2.1220159151193636vh 0px;
+        border-radius: 16px 16px 0px 0px;
+        border-bottom: solid 2px #1471D7;
+    }
+
+    .btn_hand_click{
+        position: absolute;
+        z-index: 21;
+        top: 53%;
+        left: 48%;
+        width: 100px;
+        margin-left: -32px;
+        margin-top: -40px;
+    }
+
+    #popupQuiz .header-wrap .icon{
+        padding: unset;
+    }
+
+</style>
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/ular_tangga.css"> -->
+<div class="slider-content" style="background: url(assets/image/spinner/untuk-game.png) no-repeat bottom / cover;overflow-x: hidden;">
+    <div class="wrap">
+        <div class="rb-wrap">
+            <p class="ribbon_header red" style="">
+                <strong class="ribbon-content">Pilihlah satu jawaban yang menurutmu benar!</strong>
+            </p>
+        </div>
+        <div style="margin: -20px auto; position: relative;">
+            <!-- <div class="img_anim hide">
+               <div class="img_anim_center">
+                   <img src="assets/image/game/item_4.png" alt=""> 
+               </div>
+            </div> -->
+            <!--<div class="timer">
+                <img src="image/game/bg_timer.png" alt="">
+                <div class="txt_timer">
+                    <span class="text_time">02:00</span>
+                </div>
+            </div>-->
+            <div class="spin_wrapper">
+                <div class="roda">
+                    <div class="btn_spins btn_hand_click">
+                        <img src="assets/image/spinner/Hand-click-1.gif" alt="" class="img-responsive">
+                    </div>
+                    <div class="btn_spins btn-spin">
+                        <img src="assets/image/spinner/img-spinbutton-38.png" alt="">
+                    </div>
+                    <div class="wheel-spin">
+                        <div class="pilihan_spin pilih-1">
+                            <div class="text_item">
+                                <img src="assets/image/spinner/icon-01-38.png">
+                            </div>
+                        </div>
+                        <div class="pilihan_spin pilih-2">
+                            <div class="text_item">
+                                <img src="assets/image/spinner/icon-02-38.png">
+                            </div>
+                        </div>
+                        <div class="pilihan_spin pilih-3">
+                            <div class="text_item">
+                                <img src="assets/image/spinner/icon-03-38.png">
+                            </div>
+                        </div>
+                        <div class="pilihan_spin pilih-4">
+                            <div class="text_item">
+                                <img src="assets/image/spinner/icon-04-38.png">
+                            </div>
+                        </div>
+                        <!-- <div class="pilihan pilih-5">
+                            <div class="text_item">
+                                <img src="assets/image/spinner/aset-05.png">
+                            </div>
+                        </div> -->
+                        <img src="assets/image/spinner/img-wheel-38.png" class="img-responsive">
+                    </div>  
+                </div>
+            </div>
+            <div class="item-complete-wrapper">
+                <div class="tittle-item">
+                    <div class="txt_tittle_item">
+                        Survival Kit Collected
+                    </div>
+                </div>
+                <div class="col-xs-3 list-item">
+                    <div class="item-complete item-0">
+                        <span class="img-item">
+                            <img src="assets/image/spinner/icon-01-38.png" alt="">
+                        </span>
+                        <span class="count-item">
+                            <span class="curr-count">0</span>/
+                            <span class="total-item">7</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-3 list-item">
+                    <div class="item-complete item-1">
+                        <span class="img-item">
+                            <img src="assets/image/spinner/icon-02-38.png" alt="">
+                        </span>
+                        <span class="count-item">
+                            <span class="curr-count">0</span>/
+                            <span class="total-item">6</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-3 list-item">
+                    <div class="item-complete item-2">
+                        <span class="img-item">
+                            <img src="assets/image/spinner/icon-03-38.png" alt="">
+                        </span>
+                        <span class="count-item">
+                            <span class="curr-count">0</span>/
+                            <span class="total-item">6</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-3 list-item">
+                    <div class="item-complete item-3">
+                        <span class="img-item">
+                            <img src="assets/image/spinner/icon-04-38.png" alt="">
+                        </span>
+                        <span class="count-item">
+                            <span class="curr-count">0</span>/
+                            <span class="total-item">6</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- <div class="list-item">
+                    <div class="item-complete item-4">
+                        <span class="img-item">
+                            <img src="assets/image/spinner/aset-05.png" alt="">
+                        </span>
+                        <span class="count-item">
+                            <span class="curr-count">0</span>/
+                            <span class="total-item">5</span>
+                        </span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>

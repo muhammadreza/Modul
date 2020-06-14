@@ -1,0 +1,358 @@
+/*AWAN*/
+.awan{
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    -webkit-animation: slide 20s linear infinite;
+    -moz-animation: slide 20s linear infinite;
+    animation: slide 20s linear infinite;
+    width: 100%;
+}
+.awan img{
+    position: absolute;
+    width: 200%;
+    left: 0;
+}
+
+@-webkit-keyframes slide{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -182%;
+    }
+}
+@-moz-keyframes slide{
+   0%{
+        left: 0;
+    }
+    100%{
+        left: -182%;
+    }
+}
+@keyframes slide{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -182%;
+    }
+}
+
+/*CONTENT*/
+.building{width: 101%;position: absolute;bottom: 0;left: 0;height: 30%;background: #35b769;}
+.building div{
+
+}
+.building img{width: 100%;bottom: 0%;position: absolute;}
+.rumput{
+background: #497931;
+position: absolute;
+width: 100%;
+bottom: 35%;
+left: 0;
+height: 10%;
+z-index: 1;
+}
+.rumput img{
+width: 45%;
+margin-top: -5%;
+max-width: 230px;
+}
+.jalan{
+position: absolute;
+bottom: 29%;
+width: 100%;
+height: 11%;
+left: 0;
+z-index: 1;
+}
+.jalan .jalanan-wrap{
+position: relative;
+width: 100%;
+height: 100%;
+}
+.jalan .jalanan-wrap .line-finish{
+position: absolute;
+z-index: 3;
+width: 70px;
+left: 50%;
+margin-left: -35px;
+display: none;
+}
+.jalan .jalanan-wrap .line-finish img{
+width: 100%;
+}
+.jalan .jalanan-wrap .bg-road{
+  background: #999999;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.jalan .jalanan-wrap .list{
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: url(image/swipe/road.png);
+  background-size: contain;
+  position: absolute;
+  z-index: 4;
+}
+.bottom-wrap{
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 30%;
+background: #666666;
+z-index: 0;
+left: 0;
+font-size: 0.9em;
+}
+.bottom-wrap>div{
+width: 100%;
+position: absolute;
+left: 0;
+height: 100%;
+display: table;
+}
+.bottom-wrap>div>div{
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+color: #fff;
+padding: 0 10px;
+}
+.bottom-wrap div span span{
+color: #FFCC33;
+display: inline-block;
+padding: 0;
+}
+.history_wrapper{
+width: 100%;
+height: 100%;
+position: relative;
+outline: none;
+overflow: hidden;
+}
+.slick-track{
+height: 100%;
+}
+.list_history{
+width: 100%;
+height: 100%;
+}
+.slick-list{
+width: 100%;
+height: 100%;
+}
+.man{position: absolute;z-index: 3;bottom: 5%;width: 140px;left: 50%;margin-left: -180px;}
+.man img{
+width: 100%;
+}
+.sign{
+min-width: 70px;
+position: absolute;
+left: 50%;
+margin-left: -35px;
+bottom: 42%;
+width: 10%;
+}
+.sign .logo-sign{
+position: absolute;
+width: 90%;
+left: 50%;
+margin-left: -45%;
+top: 4%;
+}
+.sign .logo-sign img{
+width: 100%;
+}
+.sign .txt_sej{
+position: absolute;
+top: 37%;
+width: 140%;
+text-align: center;
+font-size: 0.9em;
+color: #333333;
+font-weight: 600;
+line-height: 1.5em;
+height: 15%;
+margin-left: -20%;
+}
+.sign .txt_sej span{
+display: table;
+width: 100%;
+height: 100%;
+}
+.sign .txt_sej span span{
+display: table-cell;
+vertical-align: middle;
+background: #fff;
+border-radius: 10px;
+border: 3px solid #666666;
+}
+.sign .img_sign{
+width: 100%;
+}
+.peti{
+position: absolute;
+width: 120px;
+height: 116px;
+bottom: 33%;
+z-index: 4;
+left: 50%;
+margin-left: -54px;
+display: none;
+animation-duration: .5s;
+}
+.peti .ptnjk_klik{
+position: absolute;
+bottom: -9%;
+left: 18%;
+width: 50%;
+z-index: 2;
+}
+.peti .img_peti{
+width: 100%;
+z-index: 1;
+position: relative;
+}
+.header_wrap{
+position: absolute;
+width: 100%;
+z-index: 20;
+}
+.header_wrap .star_wrap{
+float: left;
+margin-left: 10px;
+margin-top: 10px;
+}
+.header_wrap .star_wrap .star{
+background: url(image/star.png);
+width: 28px;
+height: 27px;
+display: inline-block;
+background-size: cover;
+background-position: -40px;
+opacity: .5;
+position: relative;
+}
+.header_wrap .star_wrap .star img{
+display: none;
+}
+.header_wrap .star_wrap .star.active{
+opacity: 1;
+}
+.header_wrap .star_wrap .star.active img{
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+-webkit-animation: staractive .5s linear;
+-moz-animation: staractive .5s linear;
+animation: staractive .5s linear;
+}
+.header_wrap .pita_title{
+width: 150px;
+float: right;
+position: relative;
+margin-top: 10px;
+}
+.header_wrap .pita_title img{
+width: 100%;
+}
+.header_wrap .pita_title div{
+position: absolute;
+top: 0;
+text-align: center;
+height: 31px;
+display: table;
+width: 100%;
+color: #fff;
+font-size: .9em;
+padding-left: 10px;
+}
+.header_wrap .pita_title div span{
+display: table-cell;
+vertical-align: middle;
+}
+
+.btn-submit.btn_try_again{
+background: #FF9900;
+border-bottom: #D17E02 5px solid;
+}
+
+.btn-submit.next_page,
+.btn-submit.btn_try_again{
+margin-top: 10px;
+margin-bottom: 10px;
+display: none;
+}
+
+@-webkit-keyframes staractive{
+0%{
+  top: 205%;
+  left: 200%;
+  width: 100px;
+}
+100%{
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+}
+@-moz-keyframes staractive{
+0%{
+  top: 205%;
+  left: 200%;
+  width: 100px;
+}
+100%{
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+}
+@keyframes staractive{
+0%{
+  top: 205%;
+  left: 200%;
+  width: 100px;
+}
+100%{
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+}
+
+.history_wrapper .box{
+  display: none;
+  position: absolute;
+}
+
+.history_wrapper .box .img_box{
+  width: 100%;
+}
+
+.history_wrapper .box .ptnjk_klik{
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  left: 30%;
+  /*margin-left: -15px;*/
+}
+.pnjk_swipe{
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  margin-top: -100px;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 30;
+  display: none;
+}
+.pnjk_swipe img{
+  width: 100%;
+}

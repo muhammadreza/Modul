@@ -1,0 +1,201 @@
+<link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css"/>
+<style type="text/css">
+    .left-container{
+      display: inline-block;
+      width: 100%;
+      /*max-width: 380px;*/
+      vertical-align: middle;
+    }
+
+    .right-container{
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+      border-radius: 2.1220159151193636vh 2.1220159151193636vh 0px 0px;
+      text-align: center;
+      left: 0;
+      background: rgb(255,255,255);
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,212,255,0) 100%);
+      overflow-y: auto;
+    }
+    .right-container.absolute{
+      /*position: all;*/
+      margin-top: -20px;
+    }
+    video{
+      width: 100%;
+      height: 100%;
+    }
+    .col_md_two{
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background: #CFE4FA;
+    }
+    .col_md_two .video{
+      background: #CEE9FF;
+    }
+    .col_md_two .bg-video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(32,36,51,.8);
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: pointer;
+    }
+    .segitiga-play{
+        background: #FFF;
+        width: 10.610079575596817vh;
+        height: 10.610079575596817vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*margin-left: -50px;
+        margin-top: -50px;*/
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .segitiga-play .segitiga{
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 30px solid #123456;
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+      left: 50%;
+      margin-left: -10px;
+    }
+    .keterangan{
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: 2.829354553492484vh;
+      padding: 4.420866489832007vh 3.183023872679045vh 3.183023872679045vh;
+    }
+    .click_and_show_wrapper{
+
+    }
+    .click_and_show_wrapper .button_click_and_show{
+      box-shadow: 0px 5px 0px rgba(0,0,0,0.35);
+      border-radius: 5px;
+      background-color: #FFFFFF;
+      width: 240px;
+      border-color: #DEDEDE;
+      padding-bottom: 13px;
+      padding: 15px;
+      margin: 15px auto;
+    }
+    .click_and_show_wrapper .button_click_and_show .text{
+      
+    }
+    .click_and_show_image{
+      float: none;
+      margin: 0px auto;
+      background: #CEE9FF;
+      height: auto;
+      /*max-height: 53vh;*/
+      overflow-y: auto;
+      padding: 2.1220159151193636vh 3.466666666666667vh;
+    }
+    .image_click_and_show{
+      padding: 1.0610079575596818vh 0.8vh;
+    }
+    .icon_image {
+      border-radius: 8px;
+    }
+    .text_icon{
+      position: absolute;
+      width: 100%;
+      height: auto;
+      font-size: 2.475685234305924vh;
+      bottom: 0;
+      left: 0;
+      padding: 1.0610079575596818vh 0.8vh;
+      line-height: 2.1220159151193636vh;
+    }
+    .text_icon p{
+      margin: 0;
+      padding: 1.5915119363395225vh 1.0610079575596818vh;
+      background: #FFF;
+      border-radius: 0px 0px 8px 8px;
+    }
+    .video{
+      position: relative;
+      margin: 3.65296803652968vh 1.21765601217656vh 6.0882800608828vh;
+    }
+</style>
+<div class="slider-content" style="background: url('assets/image/slider/bg.png') white no-repeat bottom; background-size: cover;">
+    <div class="wrap" style="padding: 0;">
+        <div>
+            <!-- <div class="ribbon">
+                <div class="helper">
+                    <p class="ribbon"></p>
+                </div>
+            </div> -->
+            <ul id="ulasan" style="margin: 0;height: 99%;">
+                <li class="list_slider">
+                    <div class="about-wrapper">
+                         <div style="height: 100%;">
+                            <div class="content">
+                                <div class="left-container">
+                                  <div class="col_md_two" style="/*max-width: 280px;*/margin: 0 auto;">
+                                    <!-- VIDEO -->
+                                    <div class="video">
+                                      <div class="bg-video">
+                                        <div style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);width: 10.610079575596817vh;">
+                                          <img src="assets/image/slider/triangle.png" style="width: 100%;">
+                                        </div>
+                                      </div>
+                                      <img src="assets/image/slider/bg_video.png" class="cover img-responsive img-load" style="width: 100%;margin: 0 auto;max-width: 500px;">
+                                    </div>
+                                    <div class="video">
+                                      <div class="bg-video">
+                                        <div style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);width: 10.610079575596817vh;">
+                                          <img src="assets/image/slider/triangle.png" style="width: 100%;">
+                                        </div>
+                                      </div>
+                                      <img src="assets/image/slider/bg_video.png" class="cover img-responsive img-load" style="width: 100%;margin: 0 auto;max-width: 500px;">
+                                    </div>
+                                    <div class="video">
+                                      <div class="bg-video">
+                                        <div style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);width: 10.610079575596817vh;">
+                                          <img src="assets/image/slider/triangle.png" style="width: 100%;">
+                                        </div>
+                                      </div>
+                                      <img src="assets/image/slider/bg_video.png" class="cover img-responsive img-load" style="width: 100%;margin: 0 auto;max-width: 500px;">
+                                    </div>
+                                    <!-- END -->
+                                  </div>
+                                </div>
+                                <div class="right-container absolute">
+
+                                  <!-- TEXT CONTENT -->
+                                  <div class="keterangan" style="">
+                                    <p> Ikuti <span class="text_danger">“Detektif ZAC”</span> kali ini untuk melatihmu membuat keputusan yang benar sesuai dengan ketentuan kepatuhan CIMB Niaga.</p>
+                                  </div>
+                                  <!-- END -->
+
+                                </div>
+                                <div class="button_wrapper" style="position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);">
+                                    <button class="button btn-standard btn-long btn-standard--submit button_next">
+                                      NEXT
+                                    </button>
+                                </div>
+                            </div>
+                         </div> 
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/plugins/slick/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/slick/slick.min.js"></script>

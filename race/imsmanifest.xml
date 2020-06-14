@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<manifest identifier="MyPlanetsCourse"
+          version="1.2"
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd  http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd  http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+  <general>
+    <title><langstring xml:lang="en-US"></langstring></title>
+    <language>en-US</language>
+    <description>
+      <langstring xml:lang="en-US"></langstring>
+    </description>
+  </general>
+  <metametadata>
+    <metadatascheme>ADL SCORM 1.2</metadatascheme>
+    <language>en-US</language>
+  </metametadata>
+
+  <organizations default="pipwerks">
+    <organization identifier="pipwerks">
+    <title>Customer Experience</title>
+      <item identifier="CourseItem01" identifierref="SCO_Resource_01" isvisible="true">
+        <title>EMOTIONAL ELEMENTS </title>
+      </item>
+    </organization>
+  </organizations>
+
+  <resources>
+    <resource identifier="SCO_Resource_01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html"/>
+      <file href="assets/js/SCORM_API_wrapper.js"/>
+    </resource>
+  </resources>
+
+</manifest>

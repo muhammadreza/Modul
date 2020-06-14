@@ -1,0 +1,553 @@
+/* CONTENT */
+.container.fixed{
+	position: fixed; 
+	overflow: hidden;
+	
+}
+.container{
+	width: 100%;
+	padding: 0;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+.content-wrapper{
+	width: 100%;
+	/* height: 100%; */
+	/* display: table; */
+}
+.container.background-container .content-wrapper{
+	display: block;
+	padding: 15px;
+	z-index: 0;
+}
+#content{
+    height: 100%;
+    /*line-height: 23px;*/
+    width: 100%;
+    position: relative;
+    /*max-height: 640px;
+     position: fixed; 
+    max-width: 425px;*/
+}
+#content .link_group:hover{
+	opacity: .6;
+}
+#content .link_group{
+	width: 100%;
+	margin: 0 auto;
+}
+#content .link_group img{
+    padding: 0px 25px;
+}
+#content .link_group span{
+	margin: 10px 0;
+	display: inline-block;
+	width: 100%;
+}
+
+.block-content-wrap{
+	text-align: center;
+	margin-top: 25px;
+	padding-bottom: 50px;
+}
+.block-content{
+	display: inline-block;
+	max-width: 140px;
+	margin: 15px;
+	vertical-align: bottom;
+}
+#header .title .judul_module{font-size: 1.2em;;}
+#header .title .judul_course{font-size: 0.9em;}
+
+/* COVER */
+#content .number-module{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 15px 0;
+	font-size: 13em;
+	color: rgba(236, 29, 35, 0.34);
+	font-family: HelveticaNeueLTStd_Roman;
+}
+#content .title-module-wrapper{
+	position: absolute;
+	display: inline-block;
+	/*max-width: 475px;*/
+	width: 100%;
+	vertical-align: middle;
+	left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px 3.183023872679045vh;
+}
+#content .title-module-wrapper .title-module{
+	color: #FFFFFF;
+	/* font-family: HelveticaNeueLTStd_Roman; */
+	font-size: 2em;
+	text-align: left;
+	padding: 10px;
+	text-align: right;
+	line-height: 50px;
+	padding-right: 50px;
+	font-weight: bold;
+}
+#content .title-module-wrapper .title-course{
+	color: #FFFFFF;
+	font-size: 2.387267904509284vh;
+	/*font-weight: bold;
+	border-bottom: 1px solid #A70007;*/
+	padding: 2.387267904509284vh 0px;
+	text-align: left;
+	text-shadow: none;
+	line-height: 21px;
+}
+#content .title-wrapper{
+	border-bottom: 1px solid #EC1D23;
+	color: #EC1D23;
+	font-weight: 700;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	max-width: 420px;
+	font-size: 1.1em;
+	text-shadow: none;
+	width: 100%;
+	display: table;
+}
+#content .title-wrapper .number{
+	width: 35px;
+	text-align: center;
+	border-bottom: 2px solid #EC1D23;
+	padding-right: 0px;
+	height: initial;
+	display: table-cell;
+}
+#content .title-wrapper .title{
+	font-family: HelveticaNeueLTStd_Md;
+	font-weight: normal;
+	font-size: 18px;
+	display: table-cell;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+#content .cover-wrap{
+	/*background: rgba(255, 255, 255, 0.81);*/
+	padding: 0px 24px;
+	text-align: center;
+}
+#content .title-module-wrapper .title-module{
+	text-align: center;
+	max-width: 540px;
+	margin: 0 auto;
+	padding: 3.183023872679045vh 0px;
+	font-size: 3.183023872679045vh;
+	line-height: 4.641909814323608vh;
+}
+#content .title-module-wrapper .title-course{
+	text-align: center;
+}
+#content .content-cover-wrap{
+	/*display: table-cell;*/
+	position: relative;
+	/*top: 46vh;*/
+	border: 1px solid #FFF;
+    background: rgba(0,0,0,0.1);
+}
+
+/*@media only screen and (orientation: landscape) {
+	#content .content-cover-wrap{
+		top: 46vh;
+	}
+}*/
+
+/* POPUP */
+.modal-dialog{
+    box-shadow: none;
+    border-radius: 0px;
+    /*display: table;*/
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.slider_wrapper{
+	width: 75vw;
+}
+.point_wrapper{
+	width: 75vw;
+}
+@media (min-width: 992px){
+	.modal-dialog{
+		max-width: 600px;
+	}
+	.slider_wrapper{
+		width: 50vw;
+	}
+	.point_wrapper{
+		width: 50vw;
+	}
+}
+@media (min-width: 1200px){
+	#popupSoalRace .modal-dialog{
+		max-width: 390px;
+	}
+	#popupTutorialRace .modal-dialog{
+		max-width: 390px;
+	}
+	.modal-dialog{
+		max-width: 600px;
+	}
+	.slider_wrapper{
+		width: 35vw;
+	}
+	.point_wrapper{
+		width: 35vw;
+	}
+}
+.modal-content{
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    margin: 0 auto;
+    background: none;
+    width: 100%;
+    /*display: table-cell;
+    vertical-align: middle;*/
+    height: 100%;
+}
+
+/*.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}*/
+
+.modal-content{
+	border-radius: 16px;
+}
+#tutorial .modal-content .content-tutorial{
+    max-width: 390px;
+    width: 100%;
+}
+#tutorial .modal-content .img_tutorial{
+    background: #59C8DC;
+    padding: 0;
+    text-align: center;
+}
+#tutorial .modal-content .description{
+    /*background: #fff;*/
+    height: 160px;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px 0 0;
+}
+#tutorial .modal-content img{
+    width: 100%;
+    margin: 0 auto;
+}
+#tutorial .modal-content .description h2{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: none;
+    display: none;
+}
+
+#tutorial{
+    overflow-y: auto;
+}
+#tutorial .tutorial{
+    display: none;
+}
+#tutorial .tutorial.active{
+    display: block;
+}
+
+/*.modal-dialog{
+    box-shadow: none;
+    border-radius: 0px;
+    display: table;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 390px;
+}
+.modal-content{
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    margin: 0 auto;
+    background: none;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}*/
+#tutorial p{
+	margin-bottom: 3.183023872679045vh;
+}
+#tutorial .modal-content .content-tutorial{
+    max-width: 390px;
+    width: 100%;
+}
+#tutorial .modal-content .img_tutorial{
+    background: #59C8DC;
+    padding: 0;
+    text-align: center;
+    border-top-left-radius: 2.1220159151193636vh;
+    border-top-right-radius: 2.1220159151193636vh;
+}
+#tutorial .modal-content .description{
+    background: #fff;
+    color: rgba(0,0,0,0.7);
+    padding: 3.183023872679045vh;
+    /*padding-bottom: 40px;*/
+    height: auto;
+    overflow: hidden;
+    border-radius: 0 0 2.1220159151193636vh 2.1220159151193636vh;
+}
+#tutorial .modal-content img{
+    width: 100%;
+    margin: 0 auto;
+    border-top-left-radius: 2.1220159151193636vh;
+    border-top-right-radius: 2.1220159151193636vh;
+}
+#tutorial.snake button{
+    display: none;
+}
+
+/* MODAL FEEDBACK */
+.modal_feedback{
+    background: #fff;
+    /*padding: 20px 10px;*/
+    position: relative;
+    border-radius: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal_feedback .img_result{
+    width: 100%;
+    /*position: absolute;
+    top: -40px;
+    height: 90px;
+    left: 50%;
+    margin-left: -40px;
+    padding: 20px 15px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    background: #fff;*/
+}
+.modal_feedback .img_result img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+    display: none;
+}
+.description{
+    text-align: center;
+    padding: 30px 0 0;
+}
+.description h2{
+	margin: 3.183023872679045vh 0px;
+    font-size: 3.713527851458886vh;
+    font-weight: bold;
+    text-shadow: none;
+    display: none;
+}
+.modal_feedback.benar .description h2.benar{
+	display: block;
+	color: #619c61; 
+}
+.modal_feedback.salah .description h2.salah{
+	display: block;
+	color: #cd5a5a;
+}
+/*.modal_feedback.benar .img_result{
+    background: #619c61;
+}
+.modal_feedback.salah .img_result{
+    background: #cd5a5a;
+    padding: 15px;
+}*/
+.modal_feedback.benar .img_result .benar{
+    display: block;
+}
+.modal_feedback.salah .img_result .salah{
+    display: block;
+}
+
+video{
+	width: 100%;
+	height: 100%;
+}
+
+/* POINT BULLET */
+.point_wrapper{
+	/*margin: 15px 0;*/
+	display: block;
+}
+.point_wrapper_block{
+	display: block;
+	width: 100%;
+	text-align: left;
+	padding-left: 0px;
+}
+.point_wrapper .point{
+	display: inline-block;
+	max-width: 7px;
+	margin: 0 5px;
+	vertical-align: top;
+}
+.point_wrapper .point img{
+	width: 100%;
+}
+.point_wrapper .point_desc{
+	color: #444444;
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.popupslider{
+	display: none;
+}
+
+.man-block img{
+	width: 100px;
+	display: block;
+	margin: 10px auto;
+}
+.btn-close{
+	position: absolute;
+	right: 20px;
+	width: 3.183023872679045vh;
+	height: 3.183023872679045vh;
+	/*padding: 5px;*/
+	text-align: center;
+	background: #cd5a5a;
+	z-index: 10;
+	color: #fff;
+	font-size: 1.3em;
+	border-radius: 0 0 5px 5px;
+}
+#video .btn-close{
+	background: none;
+}
+
+/* QUESTION NUMBER */
+.number_question{
+	text-align: center;
+	position: relative;
+	/*width: 88px;*/
+	margin: 0 auto;
+	/*height: 34px;
+	display: table;
+	margin-bottom: 15px;*/
+}
+.number_question img{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 0;
+	z-index: 0;
+}
+.number_question .text_num{
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	color: black;
+	text-shadow: none;
+	font-size: 1em;
+	height: 100%;
+	letter-spacing: 1px;
+	padding: 2.1220159151193636vh;
+	margin: 0 auto;
+}
+
+/* GAME RIBBON */
+.game-ribbon{
+    position: relative;
+    background-color: #b74e4e;
+    color: #fff;
+    text-shadow: none;
+    padding: 13px 20px;
+    font-size: 16px;
+    text-align: left;
+    width: 85%;
+    margin-bottom: 40px;
+    margin-left: -20px;
+}
+.game-ribbon:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-top: 24px solid #b74e4e;
+    border-bottom: 23px solid #b74e4e;
+}
+.ribbon-helper{
+	position: relative;
+	margin: 10px 0;
+}
+.ribbon-helper p{
+	position: absolute;
+	top: 9px;
+	left: 6px;
+	text-shadow: none;
+	color: #fff;
+	font-size: .9em;
+}
+
+/* TIMER */
+.timer{
+    display: none;
+    position: relative;
+    width: 150px;
+    height: 36px;
+    margin-left: -40px;
+    margin-bottom: 25px;
+}
+.timer img{
+    width: 100%;
+}
+.timer .txt_timer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: table;
+    width: 70%;
+    height: 100%;
+}
+.timer .txt_timer .text_time{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding-right: 20px;
+    padding-left: 10px;
+    text-shadow: none;
+}
+
+.title p{
+	margin: 0px;
+}
+.modal{
+	margin: 0 auto;
+	padding: 0;
+}

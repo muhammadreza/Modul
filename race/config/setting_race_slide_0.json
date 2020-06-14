@@ -1,0 +1,200 @@
+{
+	"settings":{
+		"health":3,
+		"color_bar":["#940926","#9E0D29","#A7112B","#B1162E","#BB1A31","#C51E33","#CE2236","#D82638","#E22A3B","#EC2F3E","#F53340","#FF3743"]	
+	},
+	"mobil":["mobil_01.png","mobil_02.png","mobil_03.png","mobil_04.png","mobil_05.png","mobil_06.png","mobil_07.png","mobil_08.png"],
+	"logo_soal":"icon-soal.png",
+	"soal_balap":[
+		{
+			"header":"Header-Soal.png",
+			"text":"Apakah perspektif yang tepat untuk KPI di bawah ini:<br><br><strong>\"Meningkatkan fee income.\"</strong>",
+			"button":"OK",
+			"listimage":[
+				{
+					"index":0,"image":"buku.png"
+				},
+				{
+					"index":1,"image":"gear.png"
+				},
+				{
+					"index":2,"image":"koin.png"
+				}
+			],
+			"jawaban":2,
+			"feedback_benar":"KPI tersebut termasuk dalam perspektif <i>financial</i>, karena terkait dengan pencapaian <i>financial</i> yang menjadi ekspektasi dari para <i>shareholders<i>.",
+			"feedback_salah":"KPI tersebut termasuk dalam perspektif <i>financial</i>, karena terkait dengan pencapaian <i>financial</i> yang menjadi ekspektasi dari para <i>shareholders<i>."
+		},
+		{
+			"header":"Header-Soal.png",
+			"text":"Apakah perspektif yang tepat untuk KPI di bawah ini:<br><br><strong>\"Meningkatkan employee engagement melalui penerapan 3 perilaku utama A Better CIMB Niaga.\"</strong>",
+			"button":"OK",
+			"listimage":[
+				{
+					"index":0,"image":"telepon.png"
+				},
+				{
+					"index":1,"image":"gear.png"
+				},
+				{
+					"index":2,"image":"buku.png"
+				}
+			],
+			"jawaban":2,
+			"feedback_benar":"KPI tersebut termasuk dalam perspektif <i>Learning & growth</i>, karena terkait dengan usaha untuk mengelola, mengembangkan dan memotivasi karyawan.",
+			"feedback_salah":"KPI tersebut termasuk dalam perspektif <i>Learning & growth</i>, karena terkait dengan usaha untuk mengelola, mengembangkan dan memotivasi karyawan."
+		},
+		{
+			"header":"Header-Soal.png",
+			"text":"Apakah perspektif yang tepat untuk KPI di bawah ini:<br><br><strong>\"Meningkatkan cross selling.\"</strong>",
+			"button":"OK",
+			"listimage":[
+				{
+					"index":0,"image":"telepon.png"
+				},
+				{
+					"index":1,"image":"gear.png"
+				},
+				{
+					"index":2,"image":"koin.png"
+				}
+			],
+			"jawaban":0,
+			"feedback_benar":"KPI tersebut termasuk dalam perspektif <i>customer</i>, karena terkait dengan usaha pemenuhan kebutuhan maupun kepuasan nasabah baik internal maupun eksternal.",
+			"feedback_salah":"KPI tersebut termasuk dalam perspektif <i>customer</i>, karena terkait dengan usaha pemenuhan kebutuhan maupun kepuasan nasabah baik internal maupun eksternal."
+		},
+		{
+			"header":"Header-Soal.png",
+			"text":"Apakah perspektif yang tepat untuk KPI di bawah ini:\"Meningkatkan loan.\"",
+			"button":"OK",
+			"listimage":[
+				{
+					"index":0,"image":"telepon.png"
+				},
+				{
+					"index":1,"image":"gear.png"
+				},
+				{
+					"index":2,"image":"koin.png"
+				}
+			],
+			"jawaban":2,
+			"feedback_benar":"KPI tersebut termasuk dalam perspektif <i>financial</i>, karena terkait dengan pencapaian <i>financial</i> yang menjadi ekspektasi dari para <i>shareholders<i>.",
+			"feedback_salah":"KPI tersebut termasuk dalam perspektif <i>financial</i>, karena terkait dengan pencapaian <i>financial</i> yang menjadi ekspektasi dari para <i>shareholders<i>."
+		},
+		{
+			"header":"Header-Soal.png",
+			"text":"Apakah perspektif yang tepat untuk KPI di bawah ini:<br><br><strong>\"Memastikan pengeluaran biaya operasional sesuai budget.\"</strong>",
+			"button":"OK",
+			"listimage":[
+				{
+					"index":0,"image":"telepon.png"
+				},
+				{
+					"index":1,"image":"gear.png"
+				},
+				{
+					"index":2,"image":"koin.png"
+				}
+			],
+			"jawaban":2,
+			"feedback_benar":"KPI tersebut termasuk dalam perspektif <i>financial</i>, karena terkait dengan pencapaian <i>financial</i> yang menjadi ekspektasi dari para <i>shareholders<i>.",
+			"feedback_salah":"KPI tersebut termasuk dalam perspektif <i>financial</i>, karena terkait dengan pencapaian <i>financial</i> yang menjadi ekspektasi dari para <i>shareholders<i>."
+		},
+		{
+			"header":"Header-Soal.png",
+			"text":"Apakah perspektif yang tepat untuk KPI di bawah ini:\"Pengelolaan risiko kredit.\"",
+			"button":"OK",
+			"listimage":[
+				{
+					"index":0,"image":"telepon.png"
+				},
+				{
+					"index":1,"image":"gear.png"
+				},
+				{
+					"index":2,"image":"koin.png"
+				}
+			],
+			"jawaban":1,
+			"feedback_benar":"KPI tersebut termasuk dalam perspektif <i>internal process</i>, karena terkait dengan usaha usaha untuk menciptakan nilai bagi nasabah melalui perbaikan ataupun peningkatan proses kerja untuk mencapai keunggulan operasional.",
+			"feedback_salah":"KPI tersebut termasuk dalam perspektif <i>internal process</i>, karena terkait dengan usaha usaha untuk menciptakan nilai bagi nasabah melalui perbaikan ataupun peningkatan proses kerja untuk mencapai keunggulan operasional."
+		},
+		{
+			"header":"Header-Soal.png",
+			"text":"Apakah perspektif yang tepat untuk KPI di bawah ini:\"Memastikan pemenuhan persyaratan dokumen proposal kredit.\"",
+			"button":"OK",
+			"listimage":[
+				{
+					"index":0,"image":"telepon.png"
+				},
+				{
+					"index":1,"image":"gear.png"
+				},
+				{
+					"index":2,"image":"koin.png"
+				}
+			],
+			"jawaban":1,
+			"feedback_benar":"KPI tersebut termasuk dalam perspektif <i>internal process</i>, karena terkait dengan usaha usaha untuk menciptakan nilai bagi nasabah melalui perbaikan ataupun peningkatan proses kerja untuk mencapai keunggulan operasional.",
+			"feedback_salah":"KPI tersebut termasuk dalam perspektif <i>internal process</i>, karena terkait dengan usaha usaha untuk menciptakan nilai bagi nasabah melalui perbaikan ataupun peningkatan proses kerja untuk mencapai keunggulan operasional."
+		},
+		{
+			"header":"Header-Soal.png",
+			"text":"Apakah perspektif yang tepat untuk KPI di bawah ini:\"Implementasi Individual Development Plan.\"",
+			"button":"OK",
+			"listimage":[
+				{
+					"index":0,"image":"buku.png"
+				},
+				{
+					"index":1,"image":"gear.png"
+				},
+				{
+					"index":2,"image":"telepon.png"
+				}
+			],
+			"jawaban":0,
+			"feedback_benar":"KPI tersebut termasuk dalam perspektif <i>Learning & growth</i>, karena terkait dengan usaha untuk mengelola, mengembangkan dan memotivasi karyawan.",
+			"feedback_salah":"KPI tersebut termasuk dalam perspektif <i>Learning & growth</i>, karena terkait dengan usaha untuk mengelola, mengembangkan dan memotivasi karyawan."
+		},
+		{
+			"header":"Header-Soal.png",
+			"text":"Apakah perspektif yang tepat untuk KPI di bawah ini:\"Melaksanakan inisiatif terkait pemenuhan kelengkapan data.\"",
+			"button":"OK",
+			"listimage":[
+				{
+					"index":0,"image":"telepon.png"
+				},
+				{
+					"index":1,"image":"gear.png"
+				},
+				{
+					"index":2,"image":"koin.png"
+				}
+			],
+			"jawaban":1,
+			"feedback_benar":"KPI tersebut termasuk dalam perspektif <i>internal process</i>, karena terkait dengan usaha usaha untuk menciptakan nilai bagi nasabah melalui perbaikan ataupun peningkatan proses kerja untuk mencapai keunggulan operasional.",
+			"feedback_salah":"KPI tersebut termasuk dalam perspektif <i>internal process</i>, karena terkait dengan usaha usaha untuk menciptakan nilai bagi nasabah melalui perbaikan ataupun peningkatan proses kerja untuk mencapai keunggulan operasional."
+		},
+		{
+			"header":"Header-Soal.png",
+			"text":"Apakah perspektif yang tepat untuk KPI di bawah ini:\"Pertumbuhan account nasabah baru.\"",
+			"button":"OK",
+			"listimage":[
+				{
+					"index":0,"image":"telepon.png"
+				},
+				{
+					"index":1,"image":"gear.png"
+				},
+				{
+					"index":2,"image":"koin.png"
+				}
+			],
+			"jawaban":0,
+			"feedback_benar":"KPI tersebut termasuk dalam perspektif <i>customer</i>, karena terkait dengan usaha pemenuhan kebutuhan maupun kepuasan nasabah baik internal maupun eksternal.",
+			"feedback_salah":"KPI tersebut termasuk dalam perspektif <i>customer</i>, karena terkait dengan usaha pemenuhan kebutuhan maupun kepuasan nasabah baik internal maupun eksternal."
+		}
+	]
+}

@@ -1,0 +1,38 @@
+<div class="slider-content noselect" style="background: #619C61;">
+    <div class="wrap">
+        <div>
+
+            <div class="l-table-middle">
+                 <div class="l-table-middle__cell">
+
+                    <div class="content">
+                        <img src="assets/image/result/result2.gif" alt="" class="img-responsive img-1 img-load" style="width:300px;margin:15px auto;">
+                        <div class="animated fadeInUp" style="font-size: .9em;padding: 15px;max-width: 300px;margin: 0 auto;background: #fff;border-radius: 15px;text-shadow: none;">
+                            <p>&ldquo;Dengan mengetahui perbedaan antara <i>Customer Experience</i> dengan <i>Customer Service</i>, kita akan menyadari bahwa <i>Customer Experience</i> memiliki aspek yang lebih luas dibanding <i>Customer Service<i>.&rdquo;</p>
+                        </div>
+                        <br>
+                        <div class="text-align">
+                                <div class="btn-standard btn-standard--quit btn-quit">QUIT</div>
+                        </div>
+                    </div>
+                     
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+   
+   $(".btn-quit").click(function(e){
+     game.audio.audioButton.play();
+       try{
+           var btn_back = parent.top.document.getElementsByClassName("back-button")[0];
+           btn_back.click();
+       }
+       catch(e){
+           top.window.close();
+       }
+   });
+</script>

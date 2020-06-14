@@ -1,0 +1,249 @@
+#content .slider-content>div>div{
+    text-align: center;
+    font-size: .9em;
+}
+.card_wrapper{
+    display: block;
+    height: 310px;
+    max-width: 270px;
+    margin: 0 auto;
+    margin-top: 25px;
+    position: relative;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.card_wrapper .card{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    background-repeat: no-repeat;
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 3px 0px rgba(107, 106, 106, 0.21);
+    border-radius: 10px;
+}
+.card_wrapper .card.quitLeft{
+    left: -1000px;
+    opacity: 0;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    -webkit-animation: quitLeft 1s ease-in;
+    -moz-animation: quitLeft 1s ease-in;
+    animation: quitLeft 1s ease-in;
+}
+ .card_wrapper .card.quitRight{
+    left: 1000px;
+    opacity: 0;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    -webkit-animation: quitRight 1s ease-in;
+    -moz-animation: quitRight 1s ease-in;
+    animation: quitRight 1s ease-in;
+}
+.card_wrapper .card>div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.card .icon_card{
+    display: block;
+    margin: 15px auto;
+    max-width: 110px;
+}
+.card .desc_card{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    color: #333333;
+    font-size: 1.2em;
+}
+
+.pilihan_wrapper{
+    margin: 0px 0;
+    text-align: center;
+}
+.pilihan_wrapper .pilihan{
+    width: 90px;
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    color: #000;
+    text-transform: capitalize;
+}
+.pilihan_wrapper .pilihan img{
+    width: 100%;
+}
+.pilihan_wrapper .pilihan .active{
+    display: none;
+}
+.pilihan_wrapper .pilihan.active .idle{
+    display: none;
+}
+.pilihan_wrapper .pilihan.active .active{
+    display: block;
+}
+.pilihan_wrapper .pilihan.text{
+
+}
+.pilihan_wrapper .pilihan.text .image_wrap{
+
+display: none;
+}
+.pilihan_wrapper .pilihan.image{
+    background: none !important;
+    border: none !important;
+}
+.pilihan_wrapper .pilihan.image .text_wrap{
+    display: none;
+}
+
+@-webkit-keyframes quitLeft{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: -1000px;
+        opacity: 0;
+        -ms-transform: rotate(-45deg); /* IE 9 */
+        -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+        transform: rotate(-45deg);
+    }
+}
+@-moz-keyframes quitLeft{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: -1000px;
+        opacity: 0;
+        -ms-transform: rotate(-45deg); /* IE 9 */
+        -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+        transform: rotate(-45deg);
+    }
+}
+@keyframes quitLeft{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: -1000px;
+        opacity: 0;
+        -ms-transform: rotate(-45deg); /* IE 9 */
+        -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+        transform: rotate(-45deg);
+    }
+}
+
+@-webkit-keyframes quitRight{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 1000px;
+        opacity: 0;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+    }
+}
+@-moz-keyframes quitRight{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 1000px;
+        opacity: 0;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+    }
+}
+@keyframes quitRight{
+    0%{
+        left: 0;
+        opacity: 1;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 1000px;
+        opacity: 0;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+    }
+}
+.bullet_num{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 15px 3px;
+}
+.bullet_num .default{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+}
+.bullet_num img{
+    display: none;
+    width: 100%;
+}
+.bullet_num.benar .benar{
+    display: block;
+}
+.bullet_num.salah .salah{
+    display: block;
+}
+.bullet_num.benar .default,
+.bullet_num.salah .default{
+    display: none;
+}
+
+.pilihan_wrapper .pilihan.pilih-1{
+    background: #469c46;
+    border-bottom: 5px solid #3e793e;
+}
+.pilihan_wrapper .pilihan.pilih-2{
+    background: #cd5a5a;
+    border-bottom: 5px solid #973939;
+}
+.btn-standard--true{
+    background: #006600;
+    border: solid 1px #006600;
+    color: #FFF;
+    border-bottom: 5px solid #034203;
+}
+.btn-standard--false{
+    background: #CD5A5A;
+    border-bottom: 5px solid #973939;
+    margin: 0 3px;
+}

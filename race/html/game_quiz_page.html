@@ -1,0 +1,137 @@
+<style type="text/css">
+    .hide{
+        display: none;
+    }
+
+    .selected_2 {
+        background: #445566;
+    }
+
+    .slick-prev{
+        left: 0px !important;
+    }
+    .slick-next{
+        right: 0px !important;
+    }
+    .place_question{
+        position: relative;
+        margin-top: -20px;
+        background: linear-gradient(177deg, rgba(236,239,252,1) 0%, rgba(236,239,252,1) 82%, rgba(255,255,255,0) 100%);
+        border-radius: 16px 16px 0px 0px;
+        padding: 0px 5.305039787798409vh;
+        overflow-y: auto;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="assets/css/game_quiz.css">
+
+<div id="game_quiz_page">
+    <div class="slider-content noselect" style="background: url('assets/image/game_quiz/bg_quiz.png') no-repeat bottom; background-size: cover; overflow-y: auto; height: 100%;" data-role="page" data-prev="" data-next="#slide_0_0" current_sub="0" index="-1">
+        <div class="wrap" style="padding: 0px;">
+            <div style="margin: 0 auto;width: 100%;">
+                <div class="rb-wrap">
+                    <p class="ribbon_header red">
+                        <span class="ribbon-content">Pita Tiga Dimensi</span>
+                    </p>
+                </div>
+                <!-- TIMER -->
+                <div class="timer">
+                    <img src="assets/image/general_game_assets/bg_timer.svg" alt="">
+                    <span class="txt_timer"><span class="text_time">02:00</span></span>
+                </div>
+                <!-- END -->
+
+                <div class="question-wrapper">
+                    <!-- IMAGE -->
+                    <!-- <div class="row" style="margin: 0px;">
+                        <div class="col-xs-12" style="padding: 0px;">
+                             <img src="#" alt="image-soal" id="img_soal" style="width: 100%;">
+                        </div>
+                    </div> -->
+                    <!-- END -->
+                    <div class="image_wrapper" style="background: #123456;">
+                        <img src="#" alt="image-soal" id="img_soal" style="width: 100%;max-width: 500px;">
+                    </div>
+
+                    <!-- TEXT QUESTION -->
+                    <div class="place_question">
+                        <!-- NUMBERING -->
+                        <div class="number_question">
+                            <!-- <img src="assets/image/game_quiz/background_num_2.png" alt=""> -->
+                            <div class="text_num">
+                                <span class="curr_soal" style="font-weight: 700;"></span>/<span class="total_soal"></span>
+                            </div>
+                        </div>
+                        <!-- END -->
+                        <div>
+                            <div class="text_question">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- FOR DROP DOWN QUESTION -->
+                        <div class="drop_down_wrapper">
+                            <select name="question_1" class="form-control" data-role="none">
+                                <option value="">Pilih jawabanmu</option>
+                            </select>
+                        </div>
+                        <!-- END -->
+                        
+                        <!-- FOR DRAG AND DROP QUESTION -->
+                        <div class="drop_wrapper">
+                            <div class="drop"></div>
+                        </div>
+
+                        <div class="drag_wrapper">
+                            <div class="drag">
+                                <div class="center_text">
+                                    <span class="txt_drag">customers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END -->
+
+                        <div class="pilihan_jawaban_wrapper" style="text-align: center;max-width: 500px;margin: 0 auto;">
+                            <div class="category_wrapper">
+                                <div class="category"></div>
+                            </div>
+                            <!-- FOR MC, MMC, OR DAD SEQUENCE -->
+                            <ul class="pilihan_wrapper hide" style="">
+                                <li class="pilihan">
+                                    <span class="bullet">
+                                        <span class="bul_abjad">A</span>
+                                        <span class="bul_ceklis">
+                                            <img class="right" src="assets/image/general_game_assets/icon_correctcheck.png">
+                                            <img class="wrong" src="assets/image/general_game_assets/icon_wrongcross.png">
+                                        </span>
+                                    </span>
+                                    <span class="txt_pilihan"></span>
+                                </li>
+                            </ul>
+                            <!-- END -->
+
+                            <div class="truefalse_wrapper hide" style="">
+                                <button class="btn-standard btn-standard--true" index="0">True</button>
+                                <button class="btn-standard btn-standard--false" index="1">False</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BUTTON SUBMIT AND NEXT QUESTION -->
+                    <div class="button_wrapper" style="position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);">
+                        <div class="btn-standard btn-long btn-standard--submit btn-submit">
+                            <span class="l-table-middle">
+                                <span class="l-table-middle__cell">
+                                Submit
+                                </span>
+                            </span>
+                        </div>
+                        <button class="btn-standard btn-long btn-standard--submit next-soal" style="display: none;">
+                            Next
+                        </button>
+                    </div>
+                    <!-- END -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

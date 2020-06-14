@@ -1,0 +1,228 @@
+<style type="text/css">
+    .slider-content.lose{
+        background: #FF3845;
+    }
+    .slider-content.win{
+        background: #00AA65;
+    }
+    .slider-content .div_header{
+        position: absolute;
+        width: 100%;
+        padding: 0px;
+        height: 6.36604774535809vh;
+        border-radius: 0px 0px 16px 16px;
+        z-index: 999;
+    }
+    .slider-content.win .div_header{
+        background: #00aa65;
+    }
+    .slider-content.lose .div_header{
+        background: #FF3845;
+    }
+    .slider-content .ribbon_result{
+        position: relative;
+        padding: 0px 5.305039787798409vh;
+        top: 3.183023872679045vh;
+    }
+    .slider-content .ribbon_result img{
+        height: 6.36604774535809vh;
+    }
+    .slider-content.win .ribbon_lose,
+    .slider-content.lose .ribbon_win{
+        display: none;
+        margin: 0 auto;
+    }
+    .slider-content .title-result{
+        text-align: center;
+        font-size: 1.15em;
+        text-transform: uppercase;
+        color: #FFF;
+        width: 100%;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .slider-content .img-result-wrapper{
+        background: #123456;
+        text-align: center;
+        overflow: hidden;
+        z-index: 0;
+        position: relative;
+    }
+
+    .slider-content .img-result-wrapper .img-menang{
+        position: relative;
+        margin: 0 auto;
+    }
+    .slider-content .img-result-wrapper .img-kalah{
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .slider-content.win .img-result-wrapper .img-kalah,
+    .slider-content.lose .img-result-wrapper .img-menang{
+        display: none;
+        margin: 0 auto;
+    }
+    .slider-content .img-result-wrapper img{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .star-wrapper{
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+        margin-top: -14px;
+        height: auto;
+        top: -14px;
+        max-width: 240px;
+        margin: 0 auto;
+    }
+    .star-wrapper .star{
+        width: 18%;
+        height: 30px;
+        display: inline-block;
+        background: url(assets/image/result/star.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -32px 0;
+        display: none;
+    }
+    .star-wrapper .star.active{
+        background-position: 8px;
+    }
+    .btn-next-result,.btn-tryagain{
+        display: none;
+    }
+    .txt_result{
+        position: relative;
+        margin: -20px 0px;
+        border-radius: 16px 16px 0px 0px;
+    }
+    .txt_result .result_wrapper{
+        display: none;
+        padding: 6.36604774535809vh 5.305039787798409vh 0px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 3;
+        overflow-y: auto;
+    }
+
+    .slider-content.win .result_wrapper.win_wapper{
+        background: #00aa65;
+        display: block !important;
+    }
+    .slider-content.win .txt_result .result_wrapper.win_wapper .title-desc{
+        color: #619C61;
+    }
+    .slider-content.win .txt_result .result_wrapper.win_wapper .title-desc h3{
+        margin-top: 0px;
+    }
+    .slider-content .txt_result .result_wrapper .desc{
+        color: white;
+        text-align: center;
+    }
+    .slider-content.lose .result_wrapper.lose_wapper{
+        background: #FF3845;
+        display: block !important;
+    }
+    .score_wrapper{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 99;
+        height: auto;
+        max-width: 350px;
+        margin: 0 auto;
+        width: auto;
+        background: #FFF;
+        border: solid 2px #123456;
+        border-radius: 24px;
+        box-sizing: border-box;
+    }
+    .score_wrapper div{
+        width: 100%;
+        border-bottom: solid 0.5305039787798409vh #97D1FF;
+        padding: 2px 10px;
+        border-radius: 24px;
+        box-sizing: border-box;
+    }
+    .label_score{
+        position: relative;
+        top: 50%;
+        left: 0;
+        font-size: 3.183023872679045vh;
+        font-weight: 700;
+        margin-right: 1.856763925729443vh;
+        vertical-align: middle;
+        color: #000;
+    }
+    .result_score{
+        color: #FFF;
+        font-size: 5.305039787798409vh;
+        background: #0B72C4;
+        border: solid 2px #0659B3;
+        border-radius: 20px;
+        padding: 0px 1.856763925729443vh;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+</style>
+<div class="slider-content noselect" data-role="page" data-prev="" data-next="" current_sub="0" index="-1" id="result">
+    <div class="wrap" style="padding: 0px;">
+        <div>
+            <div class="div_header">
+                <div class="ribbon_result">
+                    <img src="assets/image/result/bg_ribbon_win.png" class="ribbon_win" style="width: 100%;max-width: 360px;">
+                    <img src="assets/image/result/bg_ribbon_lose.png" class="ribbon_lose" style="width: 100%;max-width: 360px;">
+                    <span class="title-result">You Win!</span>
+                </div>                
+            </div>
+
+            <div class="img-result-wrapper">
+                <div class="img-menang">
+                    <img src="assets/image/result/MC_CIMB_CRM_WIN_v.0.0.0.1.gif" alt="" class="center-block img-responsive">
+                </div>
+                <div class="img-kalah">
+                    <img src="assets/image/result/MC_CIMB_CRM_LOSE_v.0.0.0.1.gif" alt="" class="center-block img-responsive">
+                </div>
+            </div>
+
+            <div class="txt_result" style="height: 28vw;">
+                <div class="score_wrapper">
+                    <div>
+                        <span class="label_score">SCORE</span><span class="result_score">100</span>
+                    </div>
+                </div>
+                <div class="star-wrapper">
+                    <div class="star animated bounceIn"></div>
+                    <div class="star animated bounceIn"></div>
+                    <div class="star animated bounceIn"></div>
+                    <div class="star animated bounceIn"></div>
+                   <div class="star animated bounceIn"></div>
+                </div>
+                <div class="result_wrapper win_wapper" style="height: 100%;">
+                    <!-- <div class="title-desc"><h3>Congratulations!</h3></div> -->
+                    <div class="desc">Selamat!<br>Kamu berhasil menyelesaikan pembelajaran ini. Sekarang kamu bisa mulai menggunakan CIMBONE dalam pekerjaanmu sehari-hari.</div>
+                </div>
+                <div class="result_wrapper lose_wapper" style="height: 100%;">
+                    <div class="desc">Sayang sekali kamu belum berhasil.<br>Silahkan mengulangi modul ini.</div>
+                </div>
+            </div>
+
+            <div class="button-wrapper" style="position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);">
+                <button class="button btn-standard btn-long btn-standard--submit btn-next-result">
+                    Quit
+                </button>
+                <button class="button btn-standard btn-long btn-standard--submit btn-tryagain">
+                    Try Again
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

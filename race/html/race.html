@@ -1,0 +1,445 @@
+<style type="text/css">
+	.road_wrapper{
+		position: relative;
+		height: 100%;
+		background: url(assets/image/cover/bg_balap.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: repeat;
+		float: none;
+		margin: 0 auto;
+		padding: 0;
+		/*animation-name: example;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;	*/
+	}
+	.road_wrapper.pause{
+		animation-play-state: paused;
+	}
+	.road_wrapper .road img{
+		width: 100%;
+	}
+	#road1,#road2,#road3{
+		position: relative;
+		/*animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;*/
+	}
+	/*#road1{
+		animation-name: example1;
+	}
+	#road2{
+		animation-name: example2;
+	}
+	#road3{
+		animation-name: example3;
+	}*/
+	.health{
+		display: none;
+		padding: 0;
+		margin: 0 auto;
+		z-index: 3;
+	}
+	.health .logo_health{
+		position: absolute;
+	    z-index: 3;
+	    width: 17%;
+	    margin: 1.0610079575596818vh auto 0px;
+	    left: 4%;
+	}
+	.health .logo_health img{
+		width: 100%;
+	}
+	.health .health_wrapper{
+		width: 75%;
+	    background: #1B2855;
+	    height: 3.183023872679045vh;
+	    margin: 1.0610079575596818vh auto 0px;
+	    transform: skewX(-20deg);
+	    border: solid 2px #DE243E;
+	    box-sizing: content-box;
+	    padding: 0.5305039787798409vh;
+	}
+	.health .health_wrapper span{
+		width: 13%;
+	    height: 3.183023872679045vh;
+	    background: #940926;
+	    display: block;
+	    float: left;
+	    /*margin-right: 0.5305039787798409vh;*/
+	}
+	.health .health_wrapper span+span{
+		margin-right: 1%;
+	}
+	.health .health_wrapper span:first-child{
+		margin-right: 1%;
+	}
+	.health .health_wrapper span:last-child{
+		margin-right: 0%;
+	}
+	.distance_wrapper{
+		display: none;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    z-index: 3;
+	}
+	.distance_wrapper .men{
+		width: 3vh;
+	    position: absolute;
+	    top: 1.0610079575596818vh;
+	    left: 0.5305039787798409vh;
+	}
+	.distance_wrapper .men img{
+		width: 100%;
+	}
+	.distance_wrapper .distance{
+		position: relative;
+		width: 100%;
+		height: 2.1220159151193636vh;
+		border-radius: 16px;
+		background: #FFF;
+		border: solid 3px #000;
+		box-sizing: border-box;
+		margin-top: 4.244031830238727vh;
+		padding: 0px 0.5305039787798409vh;
+	}
+	.distance_wrapper .distance .current_position{
+		width: 0%;
+	    height: 0.5305039787798409vh;
+	    position: relative;
+	    background: red;
+	    border-radius: 16px;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+	.distance_wrapper .finish{
+		width: 3vh;
+	    position: absolute;
+	    top: 1.0610079575596818vh;
+	    right: 0;
+	}
+	.distance_wrapper .finish img{
+		width: 100%;
+	}
+	.time{
+		display: none;
+		position: absolute;
+	    right: 3%;
+	    width: 15vh;
+	    top: 3%;
+	    z-index: 2;
+	}
+	.time img{
+		width: 100%;
+	}
+	.time span{
+		position: absolute;
+	    top: 65%;
+	    left: 40%;
+	    font-size: 3vh;
+	    font-family: BebasBold;
+	    color: #FFF;
+	    transform: translate(-50%,-50%);
+	}
+	.bike{
+		position: fixed;
+	    padding: 0;
+	    margin: 0 auto;
+	    bottom: 15px;
+	    z-index: 2;
+	}
+	.bike img{
+		position: relative;
+		width: 20%;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transition: left 0.5s;
+  		transition: left 0.5s;
+	}
+	.bike .rocket{
+		position: fixed;
+		width: 8%;
+		-webkit-transition: none;
+  		transition: none;
+	}
+	.car{
+		position: fixed;
+	    padding: 0;
+	    margin: 0 auto;
+		top: 0;
+		z-index: 1;
+	}
+	.car img{
+		/*display: none;*/
+		position: absolute;
+		width: 22%;
+		transform: translateX(-50%);
+	}
+	.car #mobil1{
+		left: 25%;
+	}
+	.car #mobil2{
+		left: 50%;
+	}
+	.car #mobil3{
+		left: 75%;
+	}
+	.hati,.amunisi{
+		position: fixed;
+	    padding: 0 20px 10px;
+	    margin: 0 auto;
+		bottom: 0;
+		z-index: 3;
+	}
+	.hati img{
+		width: 12%;
+	}
+	.amunisi{
+		display: none;
+	}
+	.amunisi span{
+		position: absolute;
+	    color: #FFF;
+	    font-size: 4.244031830238727vh;
+	    font-family: BebasBold;
+	    transform: translate(-5.7vh,0.95vh);
+	}
+	.soal{
+		position: fixed;
+	    padding: 0;
+	    margin: 0 auto;
+		top: 0;
+		z-index: 0;
+	}
+	.soal img{
+		/*display: none;*/
+		width: 15%;		
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		transition: left 1s;
+	}
+	.object{
+		position: fixed;
+	    padding: 0;
+	    margin: 0 auto;
+		top: 0;
+	}
+	.object.pause{
+		display: none;
+	}
+	.object img{
+		width: 12%;		
+		position: absolute;
+		transform: translateX(-50%);
+	}
+	.object #list1{
+		left: 25%;
+	}
+	.object #list2{
+		left: 50%;
+	}
+	.object #list3{
+		left: 75%;
+	}
+	.modal-backdrop.in{
+		opacity: .7;
+		background: #08172e;
+	}
+	/* for popup */
+	.modal_wrapper{
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 50%;
+		background:url(assets/image/cover/bg_soal2.png) no-repeat center / cover;
+		padding: 2.1220159151193636vh;
+		transform: translateX(-50%);
+	}
+	.modal_wrapper .header_soal{
+		width: 100%;
+		height: 7vh;
+	}
+	.modal_wrapper .header_soal .logo_and_time{
+		height: 100%;
+		float: left;
+	}
+	.modal_wrapper .header_soal .logo_and_time img{
+		height: 100%;
+	}
+	.modal_wrapper .time_soal{
+		 position: relative;
+	    height: 100%;
+	    float: right;
+	}
+	.modal_wrapper .time_soal span{
+		position: absolute;
+	    left: 40%;
+	    top: 60%;
+	    font-family: BebasBold;
+	    font-size: 3vh;
+	    color: #FFF;
+	    transform: translate(-50%, -50%);
+	}
+	.modal_wrapper .soal_wrapper{
+		width: 100%;
+		height: 78vh;
+		text-align: center;
+	}
+	.modal_wrapper .soal_wrapper .title_soal{
+		width: 100%;
+		background: #9398BA;
+		color: #FFF;
+		font-weight: 700;
+		border-radius: 2.1220159151193636vh;
+		padding: 1.5915119363395225vh 2.1220159151193636vh;
+		margin-top: 2.1220159151193636vh;
+		margin-left: 0;
+		margin-right: 0;
+		display: flex;
+	}
+	.modal_wrapper .soal_wrapper .intro_wrapper{
+		text-align: left;
+		width: 100%;
+		max-height: 62vh;
+		background: #FFF;
+		border-radius: 2.1220159151193636vh;
+		border: solid 2px #C4DFEF;
+		box-sizing: border-box;
+		margin-top: 2.1220159151193636vh;
+	}
+	.modal_wrapper .soal_wrapper .intro_wrapper .intro_soal{
+		max-height: 55vh;
+		overflow-y: auto;
+		margin: 3.183023872679045vh 1.0610079575596818vh 3.183023872679045vh 0px;
+		padding: 0px 4.774535809018568vh;
+	}
+	.modal_wrapper .soal_wrapper .question_and_choice{
+		max-height: 65vh;
+	    color: #FFF;
+	    margin-top: 3.183023872679045vh;
+	    overflow-y: auto;
+	    padding: 0px 3.183023872679045vh;
+	    margin: 3.183023872679045vh -2vh 0px;
+	}
+	.modal_wrapper .soal_wrapper .question_and_choice .choices{
+		margin-top: 3.183023872679045vh;
+	}
+	.modal_wrapper .soal_wrapper .question_and_choice .choices .choice{
+		width: 100%;
+		background: #FFF;
+		color: #000;
+		padding: 2.1220159151193636vh 3.183023872679045vh;
+		border-radius: 2.1220159151193636vh;
+		border: solid 2px #C4DFEF;
+		box-sizing: border-box;
+	}
+	.modal_wrapper .soal_wrapper .question_and_choice .choices .choice+.choice{
+    	margin-top: 2.1220159151193636vh;
+	}
+	.modal_wrapper .soal_wrapper .question_and_choice .choices .choice.active{
+		background: #CCDFFF;
+		border: solid 2px #458BFF;
+	}
+	.modal_wrapper .button_wrapper{
+		position: relative;
+    	margin-top: 2.1220159151193636vh;
+    	text-align: center;
+	}
+	.modal_wrapper .btn-back_game,.modal_wrapper .btn_next_submit,.modal_wrapper .truefalse_wrapper,.modal_wrapper.konteks .question_and_choice,.modal_wrapper.quiz .intro_wrapper{
+		display: none;
+	}
+	.modal_wrapper.konteks .btn_next_submit,.modal_wrapper.quiz .btn-back_game{
+		display: block;
+	}
+	.centered_col{
+		padding: 0;
+		margin: auto;
+		display: flex;
+		align-items: center;
+	}
+	.right{
+		color: #008834 !important;
+		background: #92F7B9 !important;
+		border: solid 2px #52D183 !important;
+	}
+	.wrong{
+		color: #C30F0F !important;
+		background: #FFADA2 !important;
+		border: solid 2px #FA7968 !important;
+	}
+	.slick-dots{
+		position: relative;
+		bottom: 0px !important;
+	}
+	@keyframes example{
+		from{background-position-y: 0vh;}
+		to{background-position-y: 100vh;}
+	}
+	/*@keyframes example2{
+		from{top: -202vh;}
+		to{top: -100vh;}
+	}
+	@keyframes example3{
+		from{top: -302vh;}
+		to{top: -200vh;}
+	}*/
+</style>
+<div class="road_wrapper col-xs-12 col-sm-10 col-md-10 col-lg-4" id="road_wrapper">
+	<div class="road" style="position: relative;">
+		<!-- <img src="assets/image/cover/BG_Jalan.png" id="road1">
+		<img src="assets/image/cover/BG_Jalan.png" id="road2">
+		<img src="assets/image/cover/BG_Jalan.png" id="road3"> -->
+	</div>
+	<div class="health col-xs-12 col-sm-10 col-md-10 col-lg-4">
+		<div class="logo_health">
+			<img src="assets/image/cover/logo.png">
+		</div>
+		<div class="health_wrapper">
+			<span class="health_bar"></span>
+		</div>
+	</div>
+	<div class="distance_wrapper col-xs-10 col-sm-10 col-md-10 col-lg-10">
+		<div class="distance">
+			<div class="current_position">
+			</div>
+		</div>
+		<div class="men">
+	    	<img src="assets/image/cover/men.png">
+		</div>
+		<div class="finish">
+			<img src="assets/image/cover/finish.png">
+		</div>
+	</div>
+	<div class="time">
+		<img src="assets/image/cover/time.png">
+		<span>00:00</span>
+	</div>
+	<div class="bike col-xs-12 col-sm-10 col-md-10 col-lg-4" id="bike">
+		<img class="motor" src="assets/image/cover/player-car-01.png">
+	</div>
+	<div class="car col-xs-12 col-sm-10 col-md-10 col-lg-4">
+	    <img src="assets/image/cover/mobil_01.png" id="mobil1">
+	    <img src="assets/image/cover/mobil_07.png" id="mobil2">
+	    <img src="assets/image/cover/mobil_08.png" id="mobil3">
+	</div>
+	<div class="hati col-xs-12 col-sm-10 col-md-10 col-lg-4">
+	    <img src="assets/image/cover/shield.png">
+	</div>
+	<div class="amunisi col-xs-12 col-sm-10 col-md-10 col-lg-4">
+	    <img src="assets/image/cover/amunisi.png" style="width: 11vh;">
+	    <span></span>
+	</div>
+	<div class="soal col-xs-12 col-sm-10 col-md-10 col-lg-4">
+		<img src="assets/image/cover/icon-soal.png" id="soal">
+	</div>
+	<div class="object col-xs-12 col-sm-10 col-md-10 col-lg-4">
+		<img src="assets/image/cover/buku.png" id="list1" index="0">
+		<img src="assets/image/cover/gear.png" id="list2" index="1">
+		<img src="assets/image/cover/koin.png" id="list3" index="2">
+	</div>
+</div>
